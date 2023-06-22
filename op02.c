@@ -75,12 +75,12 @@ void sub(stack_t **head, unsigned int counter)
 }
 
 /**
- * div - divides the top two elements of the stack
+ * f_div - divides the top two elements of the stack
  * @head: stack head
  * @counter: line_number
  * Return: no return
  */
-void div(stack_t **head, unsigned int counter)
+void f_div(stack_t **head, unsigned int counter)
 {
 	stack_t *hd;
 	int len = 0, tmp;
