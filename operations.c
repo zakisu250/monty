@@ -29,7 +29,7 @@ int initiate(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	char *op_code;
 
 	op_code = strtok(content, " \n\t");
-	if (op_code && op - code[0] == '#')
+	if (op_code && op_code[0] == '#')
 		return (0);
 	bus.arg = strtok(NULL, " \n\t");
 
