@@ -70,3 +70,52 @@ void pstr(stack_t **head, unsigned int counter)
 	}
 	printf("\n");
 }
+
+#include "monty.h"
+/**
+ * f_queue - prints the top of queue
+ * @head: pointer to head
+ * @counter: line_number
+ * Return: void
+ */
+void f_queue(stack_t **head, unsigned int counter)
+{
+	(void)head;
+	(void)counter;
+	bus.line_fi = 1;
+}
+
+/**
+ * addqueue - add node to the tail stack
+ * @n: node data
+ * @head: pointer to head
+ * Return: void
+ */
+void addqueue(stack_t **head, int n)
+{
+	stack_t *new_node, *tmp;
+
+	tmp = *head;
+	new_node = malloc(sizeof(stack_t));
+	if (new_node == NULL)
+	{
+		printf("Error\n");
+	}
+	new_node->n = n;
+	new_node->next = NULL;
+	if (tmp)
+	{
+		while (tmp->next)
+			tmp = tmp->next;
+	}
+	if (!tmp)
+	{
+		*head = new_node;
+		new_node->prev = NULL;
+	}
+	else
+	{
+		tmp->next = new_node;
+		new_node->prev = tmp;
+	}
+}
