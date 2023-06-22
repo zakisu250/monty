@@ -33,7 +33,7 @@ int initiate(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		return (0);
 	bus.arg = strtok(NULL, " \n\t");
 
-	while (opcode_list[i].opcode && op)
+	while (opcode_list[i].opcode && op_code)
  	{
 		if (strcmp(op_code, opcode_list[i].opcode) == 0)
 		{
