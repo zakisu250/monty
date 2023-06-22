@@ -56,8 +56,6 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-size_t getline(char **lineptr, size_t *n, FILE *stream);
-
 
 /* ========================================= */
 /* ----------------- op01 ------------------ */
