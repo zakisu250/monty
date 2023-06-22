@@ -19,7 +19,7 @@ int initiate(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	{"add", add},
 	{"nop", nop},
 	{"sub", sub},
-	{"div", div},
+	{"div", f_div},
 	{"mul", mul},
 	{"mod", mod},
 	{"pchar", pchar},
